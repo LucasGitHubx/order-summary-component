@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+:root{
+    --Pale_blue: hsl(225, 100%, 94%);
+    --Bright_blue: hsl(245, 75%, 52%);
+    --Very_pale_blue: hsl(225, 100%, 98%);
+    --Desaturated_blue: hsl(224, 23%, 55%);
+    --Dark_blue: hsl(223, 47%, 23%);
+}
+*{
+    font-family: 'Red Hat Display';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    background-image: url('../images/pattern-background-mobile.svg');
+    background-size:cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main{
+    min-width: 340px;
+    max-width: 375px;
+    min-height: 500px;
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: var(--Pale_blue);
+    padding-bottom: 30px;
+    box-shadow:0px 0px 20px var(--Dark_blue);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+.header{
+    min-width: 100%;
+    min-height: 175px;
+    background-image: url('../images/illustration-hero.svg');
+    background-position: center;
+    background-size: cover;
+}
+
+.text{
+    width: 70%;
+
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.text h1{
+    color: var(--Dark_blue);
+}
+.text p{
+    color: var(--Desaturated_blue);
+    font-weight: 500;
+}
+
+.price{
+    width: 70%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.price article{
+    display: flex;
+    flex-direction: column;
+}
+.price div{
+    display: flex;
+    gap: 15px;
+}
+.price h2{
+    font-size: 16px;
+    color: var(--Dark_blue);
+    font-weight: 900;
+}
+.price a{
+    color: var(--Bright_blue);
+    font-weight: 700;
+}
+
+.buttons{
+    width: 90%;
+}
+.buttons{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.buttons button{
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 12px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--Very_pale_blue);
+}
+.buttons button:first-child{
+    background-color: var(--Bright_blue)
+}
+.buttons button:last-child{
+    color: var(--Desaturated_blue);
+    background-color: var(--Very_pale_blue);
+}
