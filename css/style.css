@@ -23,9 +23,10 @@ body{
 }
 
 main{
-    min-width: 340px;
+    min-width: 350px;
     max-width: 375px;
     min-height: 500px;
+    margin: 10px;
     border-radius: 15px;
     overflow: hidden;
     background-color: var(--Pale_blue);
